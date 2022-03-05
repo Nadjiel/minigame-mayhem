@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+  <title>Ranking</title>
+  <rect x="3" y="27" width="11" height="13" fill="rgb(231, 117, 52)"></rect>
+  <rect x="14" y="3" width="11" height="37" fill="rgb(231, 117, 52)"></rect>
+  <rect x="25" y="14" width="11" height="26" fill="rgb(231, 117, 52)"></rect>
+</svg>
