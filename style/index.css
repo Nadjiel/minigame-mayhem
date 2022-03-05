@@ -2,6 +2,9 @@
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: 550px 500px;
+    grid-template-areas:
+        ". ."
+        "jogo jogo";
     gap: 60px;
 }
 
@@ -37,6 +40,14 @@
     font-weight: 500;
     letter-spacing: 1px;
     background-color: rgb(255, 255, 255);
+}
+
+.jogo {
+    width: 625px;
+    height: 386px;
+    border: solid rgb(147, 42, 21) 5px;
+    margin: 0 auto;
+    grid-area: jogo;
 }
 
 #mais-jogos {
