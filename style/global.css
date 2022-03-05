@@ -4,7 +4,7 @@
     --width-outros-jogos: 370px;
 }
 
-/*CSS GERAL*/
+/*CSS RESET*/
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-image: url(imgs/asteroids.png), url(imgs/space.jpg);
+    background-image: url(../imgs/asteroids.png), url(../imgs/space.jpg);
     background-attachment: fixed;
     background-position: top 0px left 0px, top 0px left 0px;
     animation: 30s background forwards infinite linear;
@@ -67,89 +67,6 @@ h1 {
 main {
     width: fit-content;
     margin: 0 auto 100px;
-}
-
-/*CONTEUDO DA PÁGINA INICIAL*/
-
-#jogo-selecionado {
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: 550px 500px;
-    gap: 60px;
-}
-
-#hub img:hover {
-    cursor: pointer;
-}
-
-#outdoor {
-    position: relative;
-}
-
-#outdoor button {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: initial;
-    background-image: url(imgs/icons/play.svg);
-}
-
-#outdoor img {
-    width: 550px;
-    height: 350px;
-}
-
-#jogo-selecionado p {
-    padding: 2.1rem;
-    border-radius: 40px 40px 40px 0;
-    font-size: 2.1rem;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    letter-spacing: 1px;
-    background-color: rgb(255, 255, 255);
-}
-
-#mais-jogos {
-    width: calc(var(--width-outros-jogos) * 3);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.outro-jogo {
-    position: relative;
-}
-
-.outro-jogo img {
-    width: 320px;
-    height: 200px;
-    margin: 25px;
-    position: relative;
-    bottom: 0;
-    transition: 250ms;
-}
-
-.outro-jogo img:hover {
-    bottom: 20px;
-    box-shadow: 0px 15px 0px 5px rgba(255, 255, 255, 0.1);
-}
-
-.outro-jogo img:hover + .ranking {
-    bottom: 47px;
-}
-
-.outro-jogo .ranking {
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    right: 25px;
-    bottom: 27px;
-    transition: 250ms;
-    background-image: url(imgs/icons/ranking.svg);
-    background-color: rgba(196, 196, 196, 0.9);
 }
 
 /*FOOTER*/
