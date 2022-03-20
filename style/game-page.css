@@ -1,0 +1,106 @@
+:root {
+    --header-h: 120px;
+    --header-margin-b: 60px;
+    --main-margin: 60px;
+    --footer-h: 60px;
+}
+
+/*BACKGROUND*/
+body {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: darken;
+    background-image: url(../assets/imgs/space.jpg);
+    background-attachment: fixed;
+    background-position: top 0px left 0px;
+    animation: none;
+}
+
+/*HEADER*/
+header {
+    height: var(--header-h);
+    padding: 20px;
+    margin-bottom: var(--header-margin-b);
+    display: block;
+    background-color: rgb(147, 42, 21);
+}
+
+/*CONTEUDO*/
+main {
+    width: calc(100vw - var(--main-margin) * 2);
+    height: calc(100vh - var(--header-h) - var(--header-margin-b) - var(--main-margin) - var(--footer-h));
+    margin-bottom: var(--main-margin);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.jogo {
+    /*
+    width: 900px;
+    height: 560px;
+    */
+    width: 1080px;
+    height: 669px;
+}
+
+#about {
+    margin: 0 30px;
+}
+
+#about nav {
+    height: 45px;
+}
+
+#about button {
+    width: 60px;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#about button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#about section {
+    height: calc(100% - 45px);
+    padding: 30px;
+    border-radius: 0 10px 10px 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#about section h2 {
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+#about section h3, #about section th {
+    padding-bottom: 15px;
+    font-size: 2.1rem;
+}
+
+#about section p, #about section td {
+    font-size: 1.7rem;
+}
+
+#about section div {
+    margin-bottom: 15px;
+}
+
+#about section img {
+    width: 60px;
+    height: 60px;
+}
+
+#about section table {
+    width: 100%;
+    height: calc(100% - 55px);
+}
+
+/*FOOTER*/
+footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}

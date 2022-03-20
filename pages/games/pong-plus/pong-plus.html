@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pong+</title>
         <link rel="stylesheet" type="text/css" href="../../../style/global.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../style/game-page.css"/>
     </head>
 
 <body>
@@ -16,19 +17,93 @@
     <main>
         <canvas id="pong-plus" class="jogo"></canvas>
 
-        <section id="tutorial">
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Cima/baixo</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <p>Rebater bola</p>
-            </div>
+        <section id="about">
+            <nav>
+                <button id="keys-button"></button>
+                <button id="ranking-button"></button>
+            </nav>
+            <section id="keys">
+                <h2>Controles</h2>
+                <div>
+                    <h3>Controles do jogador 1</h3>
+                    <div>
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                    </div>
+                    <p>Pressione as setas para Cima/ Baixo para se movimentar e a seta para Esquerda para realizar um strong strike.</p>
+                </div>
+                <div>
+                    <h3>Controles do jogador 2</h3>
+                    <div>
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                        <img src="../../../assets/icons/ranking.svg" alt="">
+                    </div>
+                    <p>Pressione as teclas W/ S para se movimentar e a tecla D para realizar um strong strike.</p>
+                </div>
+            </section>
+            <section id="ranking">
+                <h2>Ranking</h2>
+                <table>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Daniel</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>José</td>
+                        <td>7500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jossilaine</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Eduardo</td>
+                        <td>6000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Maria</td>
+                        <td>4500</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Roberto</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Josisvaldo</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Walter</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Paulo</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Rosa</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </section>
+            
         </section>
     </main>
 
@@ -45,5 +120,7 @@
     <script src="pp-scripts/points.js"></script>
     <script src="pp-scripts/collision.js"></script>
     <script src="pp-scripts/main.js"></script>
+
+    <script src="../game-page-script.js"></script>
 </body>
 </html>

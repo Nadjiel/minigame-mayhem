@@ -19,21 +19,18 @@ html {
     font-size: 10px;
 }
 
-body {
-    background-color: rgba(0, 0, 0, 0.25);
-    background-blend-mode: normal, darken;
-    background-image: url(../assets/imgs/asteroids.png), url(../assets/imgs/space.jpg);
-    background-attachment: fixed;
-    background-position: top 0px left 0px, top 0px left 0px;
-    animation: 30s animate-bg forwards infinite linear;
-}
-
 h1 a {
     font-family: 'Press Start 2P', cursive;
 }
 
 h1 a, h2 {
     color: white;
+}
+
+p, td {
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 a {
@@ -53,6 +50,16 @@ ul {
     list-style: none;
 }
 
+/*BACKGROUND*/
+body {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: normal, darken;
+    background-image: url(../assets/imgs/asteroids.png), url(../assets/imgs/space.jpg);
+    background-attachment: fixed;
+    background-position: top 0px left 0px, top 0px left 0px;
+    animation: 30s animate-bg forwards infinite linear;
+}
+
 /*HEADER*/
 header {
     padding: 100px 0;
@@ -70,39 +77,6 @@ h1 {
 main {
     width: fit-content;
     margin: 0 auto 100px;
-}
-
-/*JOGO*/
-.jogo {
-    width: 900px;
-    height: 560px;
-    margin-bottom: 50px;
-}
-
-#tutorial {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#tutorial div {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-}
-
-#tutorial img{
-    width: 5rem;
-    height: 5rem;
-    margin: 0 5px;
-}
-
-#tutorial p {
-    margin: 0 10px;
-    font-size: 2.5rem;
-    color: rgb(255, 255, 255);
 }
 
 /*FOOTER*/
