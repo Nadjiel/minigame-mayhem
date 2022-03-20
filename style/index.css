@@ -2,21 +2,14 @@
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: 550px 500px;
-    grid-template-areas:
-        ". ."
-        "jogo jogo";
     gap: 60px;
-}
-
-#hub img:hover {
-    cursor: pointer;
 }
 
 #outdoor {
     position: relative;
 }
 
-#outdoor button {
+#outdoor a {
     width: 70px;
     height: 70px;
     position: absolute;
@@ -24,7 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: initial;
-    background-image: url(../imgs/icons/play.svg);
+    background-image: url(../assets/icons/play.svg);
 }
 
 #outdoor img {
@@ -42,18 +35,14 @@
     background-color: rgb(255, 255, 255);
 }
 
-.jogo {
-    width: 625px;
-    height: 386px;
-    border: solid rgb(147, 42, 21) 5px;
-    margin: 0 auto;
-    grid-area: jogo;
-}
-
 #mais-jogos {
     width: calc(var(--width-outros-jogos) * 3);
     display: flex;
     flex-wrap: wrap;
+}
+
+#mais-jogos img:hover {
+    cursor: pointer;
 }
 
 .outro-jogo {
@@ -72,20 +61,4 @@
 .outro-jogo img:hover {
     bottom: 20px;
     box-shadow: 0px 15px 0px 5px rgba(255, 255, 255, 0.1);
-}
-
-.outro-jogo img:hover + .ranking {
-    bottom: 47px;
-}
-
-.outro-jogo .ranking {
-    width: 40px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    right: 25px;
-    bottom: 27px;
-    transition: 250ms;
-    background-image: url(../imgs/icons/ranking.svg);
-    background-color: rgba(196, 196, 196, 0.9);
 }
