@@ -1,0 +1,99 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nicknames {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nicknames div {
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 25px;
+    padding-left: 5px;
+    margin: 0 25px;
+}
+
+.warning {
+    font-size: 1.3rem;
+    color: rgb(173 29 6);
+    font-weight: 600;
+}
+
+.jogo {
+    width: 900px;
+    height: 560px;
+    margin-bottom: 50px;
+}
+
+#about {
+    width: 900px;
+}
+
+#about * {
+    color: rgb(0, 0, 0);
+}
+
+#about nav {
+    height: 45px;
+}
+
+#about nav button {
+    width: 60px;
+    height: inherit;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#about nav button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#about section {
+    padding: 30px;
+    border-radius: 0 10px 10px 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about section > div {
+    width: calc(900px - 60px);
+    margin-bottom: 25px;
+}
+
+#about section > div > div {
+    margin-bottom: 10px;
+}
+
+#about section img {
+    width: 45px;
+}
+
+#about section p {
+    text-align: start;
+}
+
+#ranking-values {
+    border-collapse: collapse;
+}
+
+#ranking-values th, #ranking-values td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#ranking th {
+    font-size: 2rem;
+    font-weight: 500;
+}

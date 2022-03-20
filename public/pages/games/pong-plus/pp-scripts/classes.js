@@ -82,8 +82,9 @@ class Racket {
         this.defaultSpeed = 10;
         this.points = 0;
         this.player = player;
+        this.nickname = "";
         this.width = tileSize;
-        this.height = 4 * tileSize;
+        this.height = tileSize * 4;
 
         switch(this.player) {
             case 1:
