@@ -3,7 +3,6 @@ let ranking;
 function showRanking() {
     const rankingTableBody = rankingEl.querySelector("#ranking-values tbody");
     const oldTrs = rankingTableBody.children;
-    console.log(oldTrs)
     while(oldTrs.length > 0) {
         rankingTableBody.removeChild(oldTrs[0]);
     }
@@ -49,12 +48,21 @@ function sendRanking() {
     });
 }
 
+function updateRanking(newScore) {
+    fetch("http://localhost:3000/rankings/pong-plus")
+        .then(res => res.json())
+        .then(jsonRes => {
+            ranking = jsonRes;
+            console.log("ranking", ranking);
+            showRanking();
+        })
+        .then(() => {
+            if(newScore) {
+                addScore(newScore);
+                showRanking();
+                sendRanking();
+            }
+        })
+}
 
-
-fetch("http://localhost:3000/rankings/pong-plus")
-    .then(res => res.json())
-    .then(jsonRes => {
-        ranking = jsonRes;
-        console.log("ranking", ranking);
-        showRanking();
-    });
+updateRanking();
