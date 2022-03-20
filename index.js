@@ -23,7 +23,7 @@ app.get('/rankings/pong-plus', (req, res) => {
 
 app.put('/rankings/pong-plus', (req, res) => {
     fs.writeFile("./rankings/pong-plus.json", JSON.stringify(req.body), (error) => {
-        if(error) console.log("There was an error while reading");
+        if(error) console.log("There was an error while writing");
     });
     res.end();
 });

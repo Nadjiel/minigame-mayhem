@@ -46,9 +46,7 @@ function loop() {
         if(!finishTime) finishTime = Date.now();
         displayVictory();
         winnerScore = winner.points * 1000 - Math.round((finishTime - startTime) / 1000) * 10;
-        if(winner.nickname) addScore( { "name": winner.nickname, "score": winnerScore } );
-        showRanking();
-        sendRanking();
+        if(winner.nickname) updateRanking( { "name": winner.nickname, "score": winnerScore } );
     }
 }
 loop();
