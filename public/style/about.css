@@ -1,0 +1,52 @@
+main {
+    width: 900px;
+    min-height: calc(100vh - 280px);
+}
+
+main * {
+    color: rgb(255, 255, 255);
+}
+
+q {
+    font-size: 2rem;
+    font-family: monospace;
+    display: inline-block;
+    margin: 0 7rem 30px;
+    position: relative;
+}
+
+q::before {
+    width: 7rem;
+    height: 7rem;
+    font-size: 7rem;
+    position: absolute;
+    left: -7rem;
+}
+
+q::after {
+    width: 7rem;
+    height: 7rem;
+    font-size: 7rem;
+    position: absolute;
+    right: -10rem;
+    top: 0;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+#made-by {
+    margin: 60px 0;
+    display: flex;
+}
+
+#made-by img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+}
+
+#made-by div {
+    padding: 2rem 0 2rem 2rem;
+}

@@ -1,0 +1,11 @@
+#arrow-up-img {
+    transform: rotate(-90deg);
+}
+
+#arrow-down-img {
+    transform: rotate(90deg);
+}
+
+#arrow-left-img {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+  <title>Joystick</title>
+  <polygon points="8,34 11,31 34,31 37,34" fill="rgb(175, 175, 175)"/>
+  <line x1="22" x2="22" y1="32" y2="22" stroke="rgb(150, 150, 150)" stroke-width="5"/>
+  <circle cx="22" cy="13" r="10" fill-opacity="1" fill="rgb(172, 50, 50)" stroke-width="0"/>
+  <rect x="8" y="34" width="29" height="8" fill="rgb(150, 150, 150)"></rect>
+</svg>
