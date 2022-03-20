@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+  <title>S Key</title>
+    <defs>
+        <clipPath id="cut-off-top-left">
+            <rect x="0" y="31" width="45" height="14"/>
+            <rect x="22" y="19" width="23" height="26"/>
+        </clipPath>
+
+        <clipPath id="cut-off-bottom-right">
+            <rect x="0" y="0" width="45" height="13"/>
+            <rect x="0" y="0" width="22" height="26"/>
+        </clipPath>
+    </defs>
+  <circle cx="22" cy="15" r="7" fill-opacity="0" stroke="rgb(50, 50, 50)" stroke-width="5" clip-path="url(#cut-off-bottom-right)"/>
+  <circle cx="22" cy="29" r="7" fill-opacity="0" stroke="rgb(50, 50, 50)" stroke-width="5" clip-path="url(#cut-off-top-left)"/>
+</svg>

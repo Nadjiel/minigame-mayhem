@@ -53,11 +53,26 @@ input[type="text"] {
     background-color: rgb(255, 255, 255);
 }
 
+#keys-button {
+    background-image: url(../assets/icons/joystick.svg);
+    background-position: center center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+#ranking-button {
+    background-image: url(../assets/icons/ranking.svg);
+    background-position: center center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
 #about nav button:hover {
     background-color: rgb(200, 200, 200);
 }
 
 #about section {
+    min-height: 480px;
     padding: 30px;
     border-radius: 0 10px 10px 10px;
     text-align: center;
@@ -78,6 +93,7 @@ input[type="text"] {
 
 #about section img {
     width: 45px;
+    margin: 0 5px;
 }
 
 #about section p {
