@@ -1,16 +1,18 @@
-function selecionarJogo(jogo) {
-    const urlImgJogo = jogo.getAttribute("src");
-    const urlJogo = jogo.dataset.url;
-    jogoSelecionado.children[0].children[0].children[0].setAttribute("src", urlImgJogo);
-    jogoSelecionado.children[0].children[0].children[1].setAttribute("href", urlJogo);
-    jogoSelecionado.children[1].textContent = jogo.dataset.about;
+function selectGame(game) {
+    const gameName = game.dataset.name;
+    const urlImgGame = game.getAttribute("src");
+    const urlGame = game.dataset.url;
+    selectedGame.children[0].children[0].children[0].setAttribute("src", urlImgGame);
+    selectedGame.children[0].children[0].children[1].setAttribute("href", urlGame);
+    selectedGame.children[1].textContent = game.dataset.about;
+    selectedGame.children[0].children[1].textContent = gameName;
 }
 
 
 
-const jogoSelecionado = document.querySelector("#jogo-selecionado");
-const outrosJogos = document.querySelectorAll(".outro-jogo img");
+const selectedGame = document.querySelector("#jogo-selecionado");
+const otherGames = document.querySelectorAll(".outro-jogo img");
 
-for(const jogo of outrosJogos) {
-    jogo.onclick = (e) => selecionarJogo(e.target);
+for(const game of otherGames) {
+    game.onclick = (e) => selectGame(e.target);
 }
