@@ -1,0 +1,16 @@
+{
+  "name": "ranking",
+  "version": "1.0.0",
+  "description": "package for an api for managing game rankings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Oliveira Sousa",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}

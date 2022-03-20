@@ -28,7 +28,10 @@ function drawObjs() {
 function displayVictory() {
     ctx.fillStyle = "rgb(200, 200, 200)";
     ctx.font = "50px 'Segoe UI'";
-    const winText = `Player${winner.player} Won!`;
+    let winText;
+    if(!winner.nickname) winText = `Player${winner.player} Won!`;
+    else winText = `${winner.nickname} Won!`;
+    
     ctx.fillText(winText, canvas.width / 2 - ctx.measureText(winText).width / 2, canvas.height / 2);
 
     ctx.font = "30px 'Segoe UI'";
