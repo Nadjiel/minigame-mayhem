@@ -31,6 +31,7 @@ function loop() {
     if(!winner) {
         handleCollisions();
         handlePoints();
+        handleAI();
         if(ballOwner) {
             ball = new Ball();
             objs[2] = ball;
@@ -49,4 +50,15 @@ function loop() {
         if(winner.nickname) updateRanking( { "name": winner.nickname, "score": winnerScore } );
     }
 }
-loop();
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+background();
+drawObjs();
+drawPoints();
+
+let amountOfClicks = 0;
+
+canvas.onclick = () => {
+    if(amountOfClicks == 0) loop();
+    amountOfClicks++;
+};

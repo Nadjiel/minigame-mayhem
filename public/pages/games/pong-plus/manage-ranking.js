@@ -53,7 +53,6 @@ function updateRanking(newScore) {
         .then(res => res.json())
         .then(jsonRes => {
             ranking = jsonRes;
-            console.log("ranking", ranking);
             showRanking();
         })
         .then(() => {
