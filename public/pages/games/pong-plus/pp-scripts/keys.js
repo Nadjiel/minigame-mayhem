@@ -31,6 +31,7 @@ function manageKeyDown(e) {
                     }
                 }
                 break;
+            /*
             case "KeyW":
                 keys.KeyW = true;
                 player2.movingUp = true;
@@ -46,6 +47,7 @@ function manageKeyDown(e) {
                         player2.strongStrike = true;
                     }
                 }
+            */
         }
     }
 
@@ -69,6 +71,7 @@ function manageKeyUp(e) {
             case "ArrowLeft":
                 keys.ArrowLeft = false;
                 break;
+            /*
             case "KeyW":
                 keys.KeyW = false;
                 player2.movingUp = false;
@@ -79,22 +82,26 @@ function manageKeyUp(e) {
                 break;
             case "KeyD":
                 keys.KeyD = false;
+            */
         }
     }
 }
 
 function getNick(e) {
     const inputPlayer1 = document.querySelector("#nicknames div").children[0];
-    const inputPlayer2 = document.querySelector("#nicknames div").children[1];
+    //const inputPlayer2 = document.querySelector("#nicknames div").children[1];
     if(e.code == "Enter") {
         if(document.activeElement == inputPlayer1 && inputPlayer1.value) {
             player1.nickname = inputPlayer1.value;
-            inputPlayer2.focus();
+            //inputPlayer2.focus();
+            document.activeElement.blur();
         }
+        /*
         if(document.activeElement == inputPlayer2 && inputPlayer2.value) {
             player2.nickname = inputPlayer2.value;
             document.activeElement.blur();
         }
+        */
     }
 }
 

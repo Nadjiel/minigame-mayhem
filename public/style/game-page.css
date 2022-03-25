@@ -23,6 +23,7 @@ input[type="text"] {
 }
 
 .warning {
+    text-align: center;
     font-size: 1.3rem;
     color: rgb(173 29 6);
     font-weight: 600;

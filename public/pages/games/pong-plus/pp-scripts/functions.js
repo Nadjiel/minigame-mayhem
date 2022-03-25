@@ -8,6 +8,12 @@ function randomizeBallOwner() {
     return parseInt(Math.random() * 10) % 2 + 1;
 }
 
+function getBallOwner() {
+    if(ball.x == player1.x - ball.width) return 1;
+    else if(ball.x == player2.x + player2.width) return 2;
+    else return null;
+}
+
 function background() {
     ctx.fillStyle = "rgb(50, 50, 50)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
